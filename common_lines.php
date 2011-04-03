@@ -34,6 +34,7 @@ $aCommon = array();
 if (file_exists($sInputFile1))
 {
 	$fp = fopen($sInputFile1, 'r');
+
 	while (!feof($fp))
 	{
 		$sReadLine = trim(fgets($fp, 4096));
