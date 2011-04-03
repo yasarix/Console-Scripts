@@ -59,6 +59,6 @@ foreach ($aUniqueList as $sLine)
 
 fclose($fp);
 
-echo "Write ".count($aUniqueList)." line(s).\n";
+echo "Wrote ".count($aUniqueList)." line(s).\n";
 
 ?>
