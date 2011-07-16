@@ -1,1 +1,3 @@
 This repository contains the scripts that I keep in my ~/bin directory and helps me to do some quick file/text processing.
+
+You need PHP-CLI to run these scripts.
