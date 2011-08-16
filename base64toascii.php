@@ -1,6 +1,6 @@
 #!/usr/bin/php -q
 
-<?
+<?php
 if ($argc != 2) {
 	echo "Parameter error!\n";
 	echo "Usage:\nbase64toascii.php <base64string>\n";
