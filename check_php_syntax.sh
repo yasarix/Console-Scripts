@@ -9,5 +9,8 @@ PROJECTDIR=$1
 
 for i in $(find $PROJECTDIR -type f -name *.php)
 do
-    php -l "$i"
+    SYNTAXCHECK=$(php -l "$i"|grep -v 'No syntax errors')
+    if [ "$SYNTAXCHECK" != "" ]; then
+        echo $SYNTAXCHECK
+    fi
 done
