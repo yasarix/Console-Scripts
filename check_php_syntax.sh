@@ -7,7 +7,7 @@ fi
 
 PROJECTDIR=$1
 
-for i in $(find $PROJECTDIR -type f -name *.php)
+for i in $(find "$PROJECTDIR" -type f -name "*.php")
 do
     SYNTAXCHECK=$(php -l "$i"|grep -v 'No syntax errors')
     if [ "$SYNTAXCHECK" != "" ]; then
