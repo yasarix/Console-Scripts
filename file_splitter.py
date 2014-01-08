@@ -24,18 +24,17 @@ file_number = 0
 output_file = ''
 
 for line in in_file:
-	if line != "":
-		line_number += 1
+	line_number += 1
 
-		if line_number == 1:
-			if output_file:
-				output_file.close()
+	if line_number == 1:
+		if output_file:
+			output_file.close()
 
-			output_file_name = out_file_prefix + str(file_number) + ".txt"
-			output_file = open(output_file_name, 'w')
+		output_file_name = out_file_prefix + str(file_number) + ".txt"
+		output_file = open(output_file_name, 'w')
 
-		output_file.write(line)
+	output_file.write(line)
 
-		if line_number == lines_per_file:
-			line_number = 0
-			file_number += 1
+	if line_number == lines_per_file:
+		line_number = 0
+		file_number += 1
